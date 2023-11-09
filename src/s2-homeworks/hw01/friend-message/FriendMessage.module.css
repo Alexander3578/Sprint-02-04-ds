@@ -1,0 +1,74 @@
+.friendMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.friendImageAndText {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: minmax(auto, 48px) auto;
+}
+
+.friendImageAndText img {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-top: 12px;
+    border-radius: 50%;
+}
+
+.friendText {
+    display: inline-block;
+    background: rgba(245, 247, 251, 1);
+    padding: 8px 13px;
+    margin-left: 14px;
+    filter: drop-shadow(0px 1px 2px rgba(29, 33, 38, 0.10)) drop-shadow(0px 5px 20px rgba(29, 33, 38, 0.03));
+    border-radius: 5px 5px 5px 0 / 5px 5px 5px 0;
+
+    position: relative;
+}
+
+.friendText:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid rgba(245, 247, 251, 1);
+    border-left: 14px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+}
+
+.friendName {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.friendMessageText {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.friendTime {
+    margin-bottom: 30px;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+    left: 10px;
+}
