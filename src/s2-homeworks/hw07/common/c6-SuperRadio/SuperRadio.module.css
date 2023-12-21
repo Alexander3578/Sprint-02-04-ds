@@ -1,15 +1,51 @@
 .radio {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    visibility: visible;
+    top: -2px;
+    left: -2px;
+    position: relative;
+    content: '';
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .radio::before {
+
 }
 
 
 .radio:checked::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+    left: 3.2px;
+    background-color: #000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
 }
 
 .label {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: #000;
+    font-family: Montserratб sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
